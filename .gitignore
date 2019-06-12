@@ -4,6 +4,7 @@ gulpfile.js
 package.jscon
 package-lock.jscon
 README.md
+.gitignore
 
 
 ### OSX ###
