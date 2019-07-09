@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="css/Montserrat.css">
+    <link rel="stylesheet" type="text/css" href="css/Quicksand.css">
+    
+    <link rel="stylesheet" href="css/ui-1.12.1-themes-base-jquery-ui.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Hotel TOXIN</title>
+  </head>
+  <body>
+    <header><!-- Миксин лого + бренд --><!-- Начало страницы -->
+      <div class="container-fluid">
+        <div class="container navigat">
+          <div class="row no-gutters">
+            <div class="col-lg-8">
+              <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="/"><img class="brand__logo" src="img/Group.png" alt="" srcset=""><img class="brand__name" src="img/TOXIN.png" alt="" srcset=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> </button><span class="navbar-toggler-icon">    </span>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">О нас               </a></li>
+                    <li class="nav-item">Услуги<img class="nav-item__img" src="img/expand_more.png" alt="">
+                      <ul class="nav-item__ul">
+                        <li class="nav-item__list">Offer one</li>
+                        <li class="nav-item__list">Offer two</li>
+                        <li class="nav-item__list">Offer three</li>
+                        <li class="nav-item__list">Offer four</li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/">Вакансии</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Новости</a></li>
+                    <li class="nav-item">Соглашения<img class="nav-item__img" src="img/expand_more.png" alt="">
+                      <ul class="nav-item__ul">
+                        <li class="nav-item__list">Agreement one</li>
+                        <li class="nav-item__list">Agreement two</li>
+                        <li class="nav-item__list">Agreement three</li>
+                        <li class="nav-item__list">Agreement four          </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block d-xl-block buttons">
+              <button class="enter" type="button">войти</button>
+              <button class="registration" type="button">зарегистрироваться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="first-screen">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="choice-number">
+                <div class="choice-number__choice">
+                  <p class="choice-number__title">Найдём номера под ваши пожелания</p>
+                  <div class="choice-number__datepicker">
+                    <div class="choice-number__datepicker-in">
+                      <div class="choice-number__datepicker-in-title">прибытие</div>
+                      <input class="choice-number__datepicker-in-input" type="text" id="datepicker-in" placeholder="ДД.ММ.ГГГГ">
+                    </div>
+                    <div class="choice-number__datepicker-out">
+                      <div class="choice-number__datepicker-out-title">выезд</div>
+                      <input class="choice-number__datepicker-out-input" type="text" id="datepicker-out" placeholder="ДД.ММ.ГГГГ">
+                    </div>
+                  </div>
+                  <div class="choice-number__guests">
+                    <div class="choice-number__guests-title">гости</div>
+                    <div class="choice-number__guests-general-box">
+                      <div class="choice-number__how-many-guests">
+                        <p id="guests-number">Сколько гостей</p><img class="guests-down" src="img/expand_more.png" alt="">
+                        <div class="choice-number__quantity">
+                          <div class="choice-number__adults">
+                            <p>взрослые</p>
+                            <button class="minus adults" type="button"></button>
+                            <input id="adults" type="number" name="" value="0" step="1" min="0" max="3">
+                            <button class="plus adults" type="button"></button>
+                          </div>
+                          <div class="choice-number__children">
+                            <p>дети</p>
+                            <button class="minus children" type="button"></button>
+                            <input id="children" type="number" name="" value="0" step="1" min="0" max="3">
+                            <button class="plus children" type="button"></button>
+                          </div>
+                          <div class="choice-number__babies">
+                            <p>младенцы</p>
+                            <button class="minus babies" type="button"></button>
+                            <input id="babies" type="number" name="" value="0" step="1" min="0" max="3">
+                            <button class="plus babies" type="button"></button>
+                          </div>
+                          <div class="choice-number__commands">
+                            <button class="reset-button" type="reset">очистить</button>
+                            <button class="apply-button" type="button">применить</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="choice-number__submit-button" type="submit">подобрать номер        </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 trigger">
+              <div class="trigger__block">
+                <p class="trigger__text">Лучшие номера для вашей работы, отдыха и просто вдохновения </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="bottom__nav">
+        <div class="container bottom__navigate">
+          <div class="row bottom__navig-row">
+            <div class="col-lg-3 col-md-6 col-12 columns-one">
+              <div class="brand"><a class="navbar-brand" href="/"><img class="brand__logo" src="img/Group.png" alt="" srcset=""><img class="brand__name" src="img/TOXIN.png" alt="" srcset=""></a>
+              </div>
+              <div class="main">
+                <p class="booking">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-12 columns">
+              <div class="navigation">
+                <p class="navigation title">навигация</p>
+                <ul class="navigation list">
+                  <li:a class="navlink" href="/">О нас</li:a>
+                  <li:a class="navlink" href="/">Новости</li:a>
+                  <li:a class="navlink" href="/">Служба поддержки</li:a>
+                  <li:a class="navlink" href="/">Услуги</li:a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-12 columns">
+              <div class="about">
+                <p class="about title">о нас</p>
+                <ul class="about list">
+                  <li:a class="navlink" href="/">О сервисе</li:a>
+                  <li:a class="navlink" href="/">Наша команда</li:a>
+                  <li:a class="navlink" href="/">Вакансии </li:a>
+                  <li:a class="navlink" href="/">Инвесторы</li:a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-12 columns">
+              <div class="support">
+                <p class="support title">Служба поддержки</p>
+                <ul class="support list">
+                  <li:a class="navlink" href="/">Соглашения</li:a>
+                  <li:a class="navlink" href="/">Сообщества</li:a>
+                  <li:a class="navlink" href="/">Связь с нами </li:a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 columns last">
+              <div class="subscribe">
+                <p class="subscribe title">Подписка</p>
+                <form action="" method="post">
+                  <p class="subscribe__offer">Получайте специальные предложения и новости сервиса</p>
+                  <input id="subscribe__field" type="email" name="Email" placeholder="Email">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row copyright__row">
+            <div class="col-lg-9 col-md-8 col-12">
+              <p class="copy-title">Copyright © 2018 Toxin UI Kit. All rights reserved.</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="social-icons"><img class="twitter" src="img/twitt.png" alt=""><img class="fb" src="img/fb.png" alt=""><img class="insta" src="img/inst.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/ui-1.12.1-jquery-ui.js"></script>
+    <script src="js/drop-down-menu.js"></script>
+    <script src="js/guests-choice.js"></script>
+  </body>
+</html>
