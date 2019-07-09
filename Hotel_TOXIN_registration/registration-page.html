@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-toggle.min.css"><!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="css/Montserrat.css">
+    <link rel="stylesheet" type="text/css" href="css/Quicksand.css"><!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Hotel TOXIN</title>
+  </head>
+  <body>
+    <header><!-- Миксин лого + бренд --><!-- Начало страницы -->
+      <div class="container-fluid">
+        <div class="container navigat">
+          <div class="row no-gutters">
+            <div class="col-lg-8">
+              <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="/"><img class="brand__logo" src="img/Group.png" alt="" srcset=""><img class="brand__name" src="img/TOXIN.png" alt="" srcset=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> </button><span class="navbar-toggler-icon">    </span>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">О нас               </a></li>
+                    <li class="nav-item">Услуги<img class="nav-item__img" src="img/expand_more.png" alt="">
+                      <ul class="nav-item__ul">
+                        <li class="nav-item__list">Offer one</li>
+                        <li class="nav-item__list">Offer two</li>
+                        <li class="nav-item__list">Offer three</li>
+                        <li class="nav-item__list">Offer four</li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/">Вакансии</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Новости</a></li>
+                    <li class="nav-item">Соглашения<img class="nav-item__img" src="img/expand_more.png" alt="">
+                      <ul class="nav-item__ul">
+                        <li class="nav-item__list">Agreement one</li>
+                        <li class="nav-item__list">Agreement two</li>
+                        <li class="nav-item__list">Agreement three</li>
+                        <li class="nav-item__list">Agreement four          </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block d-xl-block buttons">
+              <button class="enter" type="button">войти</button>
+              <button class="registration" type="button">зарегистрироваться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid first-registr">
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div class="new-account-box">
+              <form class="new-account__form" action="" method="get">
+                <div class="new-account__title">Регистрация аккаунта</div>
+                <input class="new-account name" type="text" value="Имя" name="">
+                <input class="new-account surname" type="text" value="Фамилия" name="">
+                <div class="new-account__radiobuttons">
+                  <input id="male" type="radio" name="">
+                  <label for="male">Мужчина</label>
+                  <input id="female" type="radio" name="">
+                  <label for="female">Женщина</label>
+                </div>
+                <div class="new-account__birthday">
+                  <div class="new-account__birthday-title">дата рождения</div>
+                  <input class="new-account" id="birthday-date" type="date" name="">
+                </div>
+                <div class="new-account__enter">
+                  <div class="new-account__enter-title">данные для входа в сервис</div>
+                  <input class="new-account" id="email" type="email" value="Email" name="">
+                  <input class="new-account" id="pass" type="password" value="Пароль" name="">
+                  <label class="toggle" for="#toggle">Получать спецпредложения              
+                    <input id="toggle" type="checkbox" data-toggle="toggle" name=""><img class="toggle-of" src="img/Toggle 2.1.png" alt="">
+                  </label>
+                </div>
+                <button class="new-account__button" type="submit">перейти к оплате<img src="img/arrow_forward_white.png" alt=""></button>
+                <div class="enter__private">
+                  <p class="enter__text">Уже есть аккаунт на Toxin</p>
+                  <input class="enter__button" type="button" value="войти">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="bottom__nav">
+        <div class="container bottom__navigate">
+          <div class="row bottom__navig-row">
+            <div class="col-lg-3 col-md-6 col-12 columns-one">
+              <div class="brand"><a class="navbar-brand" href="/"><img class="brand__logo" src="img/Group.png" alt="" srcset=""><img class="brand__name" src="img/TOXIN.png" alt="" srcset=""></a>
+              </div>
+              <div class="main">
+                <p class="booking">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-12 columns">
+              <div class="navigation">
+                <p class="navigation title">навигация</p>
+                <ul class="navigation list">
+                  <li:a class="navlink" href="/">О нас</li:a>
+                  <li:a class="navlink" href="/">Новости</li:a>
+                  <li:a class="navlink" href="/">Служба поддержки</li:a>
+                  <li:a class="navlink" href="/">Услуги</li:a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-12 columns">
+              <div class="about">
+                <p class="about title">о нас</p>
+                <ul class="about list">
+                  <li:a class="navlink" href="/">О сервисе</li:a>
+                  <li:a class="navlink" href="/">Наша команда</li:a>
+                  <li:a class="navlink" href="/">Вакансии </li:a>
+                  <li:a class="navlink" href="/">Инвесторы</li:a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-12 columns">
+              <div class="support">
+                <p class="support title">Служба поддержки</p>
+                <ul class="support list">
+                  <li:a class="navlink" href="/">Соглашения</li:a>
+                  <li:a class="navlink" href="/">Сообщества</li:a>
+                  <li:a class="navlink" href="/">Связь с нами </li:a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 columns last">
+              <div class="subscribe">
+                <p class="subscribe title">Подписка</p>
+                <form action="" method="post">
+                  <p class="subscribe__offer">Получайте специальные предложения и новости сервиса</p>
+                  <input id="subscribe__field" type="email" name="Email" placeholder="Email">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row copyright__row">
+            <div class="col-lg-9 col-md-8 col-12">
+              <p class="copy-title">Copyright © 2018 Toxin UI Kit. All rights reserved.</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="social-icons"><img class="twitter" src="img/twitt.png" alt=""><img class="fb" src="img/fb.png" alt=""><img class="insta" src="img/inst.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap-toggle.min.js"></script>
+    <script src="js/drop-down-menu.js"></script>
+  </body>
+</html>
