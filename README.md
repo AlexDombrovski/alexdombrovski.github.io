@@ -2,6 +2,8 @@
 
 My educational projects:
 
+http://happy-bakery.ru/
+
 https://alexdombrovski.github.io/Hotel_TOXIN_start-page/
 
 https://alexdombrovski.github.io/Hotel_TOXIN_Search-room/
