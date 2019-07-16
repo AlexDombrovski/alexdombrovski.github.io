@@ -1756,6 +1756,48 @@ h1 {
   right: 550px;
   padding: 40px 30px 30px 30px; }
 
+.new-account-box-off {
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  z-index: 0; }
+
+.message-result {
+  position: absolute;
+  width: 380px;
+  height: 350px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  top: 60px;
+  right: 550px;
+  padding: 40px 30px 30px 30px;
+  overflow: hidden;
+  opacity: 0; }
+
+.message-result-on {
+  position: absolute;
+  width: 380px;
+  height: 350px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  top: 60px;
+  right: 550px;
+  padding: 40px 30px 30px 30px;
+  opacity: 1;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out; }
+
 .new-account__title {
   font-family: 'Montserrat-SemiBold';
   font-style: normal;
@@ -1764,6 +1806,16 @@ h1 {
   line-height: 30px;
   color: #1F2041;
   margin-bottom: 20px; }
+
+.message-result__title {
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+  margin-bottom: 20px;
+  text-align: center; }
 
 .new-account {
   width: 320px;
@@ -1778,7 +1830,7 @@ h1 {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
+  color: #1F2041;
   margin-bottom: 10px;
   padding: 13px 0 13px 15px; }
   .new-account:focus {
@@ -1788,18 +1840,38 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .new-account__radiobuttons label {
+  height: 21px; }
+  .new-account__radiobuttons .label-of {
     font-family: 'Montserrat-Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
-    margin: 2px 20px 0 14px; }
+    margin: 2px 20px 0 0;
+    padding-left: 30px;
+    cursor: pointer;
+    background-image: url(../img/gend-of.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain; }
+  .new-account__radiobuttons .label-on {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    margin: 2px 20px 0 0;
+    padding-left: 30px;
+    cursor: pointer;
+    background-image: url(../img/gend-on.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain; }
+
+#male, #female {
+  visibility: collapse; }
 
 .new-account__birthday {
   margin: 20px 0 0 0; }
@@ -1814,6 +1886,11 @@ h1 {
   color: #1F2041;
   margin: 20px 0 5px 0; }
 
+#birthday-date::-webkit-outer-spin-button, #birthday-date::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0; }
+
 .toggle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1822,14 +1899,14 @@ h1 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  cursor: pointer;
   background-image: url("../img/Toggle 2.png");
   background-repeat: no-repeat; }
+  .toggle .btn {
+    display: none; }
 
 .toggle-of {
   position: absolute;
@@ -1839,8 +1916,8 @@ h1 {
 .toggle-on {
   position: absolute;
   top: 4px;
-  left: 3px;
-  width: 34px;
+  left: 23px;
+  width: 12px;
   height: 12px;
   border: 1px solid #999afc;
   border-radius: 10px;
@@ -1854,16 +1931,13 @@ h1 {
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75); }
 
-.btn {
-  visibility: collapse; }
-
 .new-account__button {
   width: 320px;
   height: 44px;
   background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
-  margin-top: 10px;
+  margin-top: 20px;
   font-family: 'Montserrat-SemiBold';
   font-style: normal;
   font-weight: bold;
@@ -1878,7 +1952,7 @@ h1 {
   .new-account__button img {
     position: absolute;
     right: 40px;
-    bottom: 98px; }
+    bottom: 108px; }
 
 .enter__private {
   display: -webkit-box;
@@ -1914,3 +1988,21 @@ h1 {
   border-radius: 22px; }
   .enter__button:focus {
     outline: none; }
+
+.new-account__birthday input {
+  cursor: pointer;
+  background-image: url(../img/expand_more.png);
+  background-repeat: no-repeat;
+  background-position: right; }
+
+.new-account__birthday:focus {
+  outline: none; }
+
+.message-result__name {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 20px; }
