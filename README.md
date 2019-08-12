@@ -15,3 +15,5 @@ https://alexdombrovski.github.io/Hotel_TOXIN_registration/
 https://alexdombrovski.github.io/Cardboard/
 
 https://alexdombrovski.github.io/book-page/
+
+https://alexdombrovski.github.io/React-template-slider/
