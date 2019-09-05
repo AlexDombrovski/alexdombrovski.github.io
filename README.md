@@ -1,6 +1,6 @@
 # alexdombrovski.github.io
 
-My educational projects:
+My educational and others projects:
 
 http://happy-bakery.ru/
 
