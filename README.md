@@ -1,8 +1,10 @@
 # alexdombrovski.github.io
 
-My educational and others projects:
+My educational and working projects:
 
 http://happy-bakery.ru/
+
+http://happy-bakery.ru/pies
 
 https://alexdombrovski.github.io/Hotel_TOXIN_start-page/
 
