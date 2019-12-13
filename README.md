@@ -16,4 +16,6 @@ https://alexdombrovski.github.io/Hotel_TOXIN_registration/
 
 https://alexdombrovski.github.io/Hotel_TOXIN_start-page/
 
+https://alexdombrovski.github.io/CoffeeIn/
+
 https://alexdombrovski.github.io/React-template-slider/
