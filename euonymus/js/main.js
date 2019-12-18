@@ -31,15 +31,3 @@ const showSlides = (n) => {
 };
 
 showSlides(slideIndex);
-
-
-let latestNews = document.querySelectorAll('.last-news__wrapper');
-let left = 0;
-
-const slyderNews = () => {
-  left = left - 128;
-  if (left < 512) {
-    left = 0;
-  }
-  latestNews.style.left = left + 'px';
-};
