@@ -31,3 +31,34 @@ const showSlides = (n) => {
 };
 
 showSlides(slideIndex);
+
+// scrolling
+let arrowTop = document.querySelector('.up-arrow');
+let scrolled;
+let timer;
+
+arrowTop.addEventListener('click', () => {
+  scrolled = window.pageYOffset;
+  scrollToTop();
+});
+
+const scrollToTop = () => {
+  if (scrolled > 0) {
+    window.scrollTo(0, scrolled);
+    scrolled = scrolled - 60;
+    timer = setTimeout(scrollToTop, 60);
+  }
+  else {
+    clearTimeout(timer);
+    window.scrollTo(0, 0);
+  }
+};
+
+// hamburger button menu
+let hamburger = document.querySelector('.navbar__wrapper');
+let menuList = document.querySelector('.navbar__list');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('opened');
+  menuList.classList.toggle('hidden');
+});
