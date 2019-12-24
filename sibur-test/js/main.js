@@ -1,4 +1,4 @@
-// sections limit on 256 letters
+// sections limit on 750 letters
 let aboutUs = document.querySelector('.about-us__description').innerText;
 console.log(aboutUs.length);
 
@@ -8,7 +8,7 @@ document.querySelector('.about-us__description').innerText = newAboutAs;
 
 
 
-// sections limit on 512 letters
+// sections limit on 890 letters
 let ourProgram = document.querySelector('.our-program__description').innerText;
 console.log(ourProgram.length);
 

@@ -20,4 +20,6 @@ https://alexdombrovski.github.io/euonymus/
 
 https://alexdombrovski.github.io/CoffeeIn/
 
+https://alexdombrovski.github.io/sibur-test/
+
 https://alexdombrovski.github.io/React-template-slider/
