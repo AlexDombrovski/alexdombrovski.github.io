@@ -6,6 +6,8 @@ http://happy-bakery.ru/
 
 http://happy-bakery.ru/pies
 
+https://alexdombrovski.github.io/ishop-layout/
+
 https://alexdombrovski.github.io/Cardboard/
 
 https://alexdombrovski.github.io/Hotel_TOXIN_Search-room/
