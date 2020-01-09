@@ -363,20 +363,6 @@ const addProductToCart = (code) => {
 };
 
 // -------------------------------
-// Window of a basket in top right
-const data = JSON.parse(localStorage.getItem('ishopBasket'));
-
-
-document.querySelector('.navbar-right').classList.remove('hidden');
-
-const totalCount = data.reduce((sum, obj) => sum + +obj.count, 0);
-document.querySelectorAll('#currentShoppingCart .total-count').forEach(item => item.innerText = totalCount);
-
-const totalCost = data.reduce((sum, obj) => sum + +obj.price, 0);
-document.querySelector('#currentShoppingCart .total-cost').innerText = totalCost;
-
-
-// -------------------------------
 // Clean a basket
 const cleanBasketButton = () => {
   localStorage.removeItem('ishopBasket');
