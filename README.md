@@ -6,7 +6,7 @@ http://happy-bakery.ru/
 
 http://happy-bakery.ru/pies
 
-https://alexdombrovski.github.io/ishop-layout/
+https://alexdombrovski.github.io/ishop-layout/index.html
 
 https://alexdombrovski.github.io/Cardboard/
 
