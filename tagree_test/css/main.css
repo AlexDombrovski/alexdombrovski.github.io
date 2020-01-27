@@ -133,7 +133,7 @@ table {
   font-family: 'Roboto Reg', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  background-image: url(/img/select1.png);
+  background-image: url(../img/select1.png);
   background-repeat: no-repeat;
   background-position: right;
   cursor: pointer; }
@@ -152,7 +152,7 @@ table {
   width: 56px;
   height: 50px;
   background-color: #ec2926;
-  background-image: url(/img/m-glass.png);
+  background-image: url(../img/m-glass.png);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -554,7 +554,7 @@ article {
   outline: none;
   cursor: pointer;
   background-color: #ffffff;
-  background-image: url(/img/triangle-black-button.png);
+  background-image: url(../img/triangle-black-button.png);
   background-repeat: no-repeat;
   background-position: right; }
 
