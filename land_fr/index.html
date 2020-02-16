@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="prefetch" href="fonts/Roboto/Roboto-Regular.woff">
     <link rel="prefetch" href="fonts/Roboto/Roboto-Medium.woff">
     <link rel="prefetch" href="fonts/Roboto/Roboto-Bold.woff">
@@ -13,56 +14,95 @@
   </head>
   <body>
     <header id="header">
-      <div class="header__wrapper parallax-window" data-parallax="scroll" data-image-src="img/first-screen.png" data-speed="0.2"> 
-        <h1 class="header__title">
-          Удобное и эффективное скайп-обучение<br> <span> французскому</span><br>
-          для работы, учебы, путешествий и души
-        </h1>
-        <div class="header__nav" style="height: 70px; align-items: center;">
-          <input class="checkbox1 visuallyHidden" id="checkbox1" type="checkbox">
-          <label for="checkbox1">
-            <div class="hamburger hamburger1"><span class="bar bar1"></span><span class="bar bar2"></span><span class="bar bar3"></span><span class="bar bar4"></span></div>
-          </label>
-          <div class="header__nav_logo"></div>
-          <nav class="header__nav_menu">
-                  <ul class="header__nav_list"><a class="header__nav_link" href="#customer">
-                      <li class="header__nav_item">Для кого?</li></a><a class="header__nav_link" href="#programs">
-                      <li class="header__nav_item">Программы обучения</li></a><a class="header__nav_link" href="#price">
-                      <li class="header__nav_item">Стоимость</li></a></ul>
-          </nav>
-          <div class="header__nav_contacts">
-            <p class="header__nav_tel">+7 999 000 00 00</p>
-            <p class="header__nav_skype">Skype: la-langue.française</p>
-            <p class="header__nav_email">Email: goodteaching@gmaill.com</p>
-                  <button class="btn btn-primary header__call-order" type="button" data-toggle="modal" data-target="#exampleModal">Заказать звонок</button>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title">Введите свои данные</h5>
-                          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="form-group">             
-                              <input class="form-control input__call-order" type="email" aria-describedby="emailHelp" placeholder="email" required>
-                            </div>
-                            <div class="form-group">
-                              <input class="form-control input__call-order" type="tel" placeholder="Телефон" required>
-                            </div>
-                            <button class="btn btn-primary button__call-order" type="submit">Отправить</button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+      <div class="container-fluid header__wrapper parallax-window" data-parallax="scroll" data-image-src="img/first-screen.png" data-speed="0.2">
+        <div class="row no-gutters">
+          <div class="col">
+            <h1 class="header__title">
+              Удобное и эффективное скайп-обучение<br> <span>французскому</span>
+              <span>языку</span><br>
+              для работы, учебы, путешествий и души
+            </h1>
           </div>
         </div>
-        <div class="header__nav_toggle-menu" style="display: none;">
-                <ul class="header__nav_list"><a class="header__nav_link" href="#customer">
-                    <li class="header__nav_item">Для кого?</li></a><a class="header__nav_link" href="#programs">
-                    <li class="header__nav_item">Программы обучения</li></a><a class="header__nav_link" href="#price">
-                    <li class="header__nav_item">Стоимость</li></a></ul>
+        <div class="container-fluid header__wrapper_nav">
+          <div class="container">
+            <div class="row no-gutters">
+              <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light p-zero">
+                  <div class="col-md-3 col-5 order-first"><a class="navbar-brand" href="#"><img src="img/logo_fr.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <input class="checkbox1 visuallyHidden" id="checkbox1" type="checkbox">
+                      <label for="checkbox1">
+                        <div class="hamburger hamburger1"><span class="bar bar1"></span><span class="bar bar2"></span><span class="bar bar3"></span><span class="bar bar4"></span></div>
+                      </label>
+                    </button>
+                  </div>
+                  <div class="col-lg-5 order-lg-2 col-12 order-3 p-zero">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#customer">Для кого?<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#programs">Программы обучения</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#price">Стоимость</a></li>
+                      </ul>
+                            <div class="header__call-order-btn">
+                              <button class="btn btn-primary header__call-order d-block d-lg-none" type="button" data-toggle="modal" data-target="#callOrder">Заказать звонок</button>
+                                    <div class="modal fade" id="callOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title">Введите свои данные</h5>
+                                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <form action="" method="post">
+                                              <div class="form-group">             
+                                                <input class="form-control input__call-order" type="text" placeholder="Имя" required>
+                                              </div>
+                                              <div class="form-group">
+                                                <input class="form-control input__call-order" id="phoneInputMobile" type="tel" placeholder="Телефон" required>
+                                              </div>
+                                              <button class="btn btn-primary button__call-order" type="submit">Отправить</button>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-7 order-2">
+                    <div class="header__nav_contacts">
+                      <p class="header__nav_tel">+7 999 000 00 00</p>
+                      <p class="header__nav_skype">Skype: la-langue.française</p>
+                      <p class="header__nav_email">Email: goodteaching@gmaill.com</p>
+                            <button class="btn btn-primary header__call-order d-none d-lg-block" type="button" data-toggle="modal" data-target="#callOrder">Заказать звонок</button>
+                                  <div class="modal fade" id="callOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title">Введите свои данные</h5>
+                                          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <form action="" method="post">
+                                            <div class="form-group">             
+                                              <input class="form-control input__call-order" type="text" placeholder="Имя" required>
+                                            </div>
+                                            <div class="form-group">
+                                              <input class="form-control input__call-order" id="phoneInputDesktop" type="tel" placeholder="Телефон" required>
+                                            </div>
+                                            <button class="btn btn-primary button__call-order" type="submit">Отправить</button>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -172,10 +212,10 @@
                         <div class="modal-body">
                           <form>
                             <div class="form-group">             
-                              <input class="form-control input__call-order" type="email" aria-describedby="emailHelp" placeholder="email" required>
+                              <input class="form-control input__call-order" type="text" aria-describedby="emailHelp" placeholder="Имя" required>
                             </div>
                             <div class="form-group">
-                              <input class="form-control input__call-order" type="tel" placeholder="Телефон" required>
+                              <input class="form-control input__call-order" id="phoneInputPrograms" type="tel" placeholder="Телефон" required>
                             </div>
                             <button class="btn btn-primary button__call-order" type="submit">Отправить</button>
                           </form>
@@ -215,8 +255,62 @@
               <input class="order-cta__input_item" id="phone" type="tel" name="" placeholder="Телефон" style="border-left: 3px solid tomato" required>
               <input class="order-cta__input_item" type="email" name="" placeholder="Email" style="border-left: 3px solid tomato" required>
               <textarea class="order-cta__desc" name="" placeholder="Укажите программу или напишите свой текст" style="border-left: 3px solid #8dc041"></textarea>
+              <p class="order-cta__policy">Отправляя данное сообщение, вы соглашаетесь с нашей  <a class="order-cta__policy_link" href="/" data-toggle="modal" data-target="#policy">политикой конфиденциальности        </a></p>
             </div>
             <button class="order-cta__form-button" type="submit">Отправить</button>
+                  <div class="modal fade" id="policy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Политика конфиденциальности</h5>
+                          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="order-cta__policy_dark">
+                            Настоящее соглашение является официальным документом владельца сайта, (далее – Администратор) 
+                            и определяет порядок использования посетителями (далее - Посетитель) сайта Администратора (http:_____) 
+                            и обработки информации, получаемой Администратором от Посетителя.<br><br> 1. Соглашение может быть изменено Администратором в одностороннем порядке в любой момент, 
+                            без какого-либо специального уведомления Посетителя Сайта.<br><br>2. В случае, если при использовании Посетителями Сайта Администратору будет сообщена какая-либо информация, 
+                            относящаяся прямо или косвенно к определенному или определяемому физическому лицу (далее – Персональные данные), 
+                            ее последующая обработка будет осуществляться в соответствии с законодательством Российской Федерации. 
+                            В отношении всех сообщаемых Персональных данных Посетитель дает Администратору согласие на их обработку. 
+                            Администратор обрабатывает персональные данные Посетителя исключительно в целях предоставления Посетителю функций Сайта, 
+                            размещенного на нем контента, маркетинговой, рекламной, иной информации, в целях получения Посетителем 
+                            персонализированной (таргетированной) рекламы, исследования и анализа данных Посетителя, 
+                            а также в целях предложения Посетителю своих товаров и услуг. В отношении всех сообщенных Администратору 
+                            Посетителем своих персональных данных Администратор вправе осуществлять сбор, систематизацию, 
+                            накопление, хранение, уточнение (обновление, изменение), использование, распространение 
+                            (в том числе передача любым третьим лицам, включая передачу персональных данных третьим лицам на хранение 
+                            или в случае поручения обработки персональных данных третьим лицам), обезличивание, 
+                            блокирование, уничтожение, трансграничную передачу, обработку с применением основных способов 
+                            такой обработки (хранение, запись на электронных носителях и их хранение, составление перечней, маркировка) 
+                            и иные действия в соответствии со статьей 3 Федерального закона от 27.06.2006 № 152-ФЗ «О персональных данных».<br><br>3. Посетитель понимает и соглашается с тем, что предоставление Администратору какой-либо информации о себе, 
+                            не являющейся контактной и не относящейся к целям, обозначенным Администратором Сайта 
+                            (не относящейся к деятельности Администратора, к продвигаемым им товарам и/или услугам, 
+                            к условиям сотрудничества Администратора и Посетителя Сайта), а равно предоставление информации, 
+                            относящейся к государственной, банковской и/или коммерческой тайне, информации о расовой и/или 
+                            национальной принадлежности, политических взглядах, религиозных или философских убеждениях, 
+                            состоянии здоровья, интимной жизни Посетителя Сайта или иного третьего лица запрещено.<br><br>4. В случае принятия Посетителем решения о предоставлении Администратору какой-либо информации (каких-либо данных), 
+                            Посетитель обязуется предоставлять исключительно достоверную и актуальную информацию. 
+                            Посетитель Сайта не вправе вводить Администратора в заблуждение в отношении своей личности, 
+                            сообщать ложную или недостоверную информацию о себе.<br><br>5. Администратор принимает меры для защиты Персональных данных Посетителя Сайта в соответствии с законодательством Российской Федерации.<br><br>6. Администратор не проверяет достоверность персональной информации, предоставляемой Посетителем Сайта, 
+                            и не имеет возможности оценивать его дееспособность. Однако Администратор исходит из того, что Посетитель 
+                            предоставляет достоверную персональную информацию и поддерживает эту информацию в актуальном состоянии.<br><br>7. Администратор вправе запрещать Посетителю доступ к Сайту или к отдельным частям Сайта.<br><br>8. Посетитель в соответствии с ч. 1 ст. 18 Федерального закона «О рекламе» дает Администратору свое согласие 
+                            на получение сообщений рекламного характера.<br><br>9. Посетитель самостоятельно несет ответственность перед третьими лицами за свои действия, 
+                            связанные с использованием Сайта, в том числе, если такие действия приведут к нарушению прав и законных интересов третьих лиц, 
+                            а также за несоблюдение законодательства при использовании Сайта.<br><br>10. Посетитель использует Сайт на свой собственный риск. Сайт предоставляется «как есть». 
+                            Администратор не принимает на себя никакой ответственности, в том числе за соответствие Сайта целям Посетителя.<br><br>11. Любые информацию и/или материалы (в том числе загружаемое ПО, письма, какие-либо инструкции и руководства к действию и т.д.), 
+                            доступ к которым Посетитель получает с использованием Сайта, Посетитель может использовать на свой собственный страх и риск 
+                            и самостоятельно несет ответственность за возможные последствия использования указанных информации и/или материалов, 
+                            в том числе за ущерб, который это может причинить компьютеру Посетителя или третьим лицам, за потерю данных или любой другой вред.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn order-cta__form-button" type="button" data-dismiss="modal">Закрыть</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
           </form>
         </div>
       </section>
@@ -224,7 +318,6 @@
     <footer class="footer">
       <div class="footer__content">
         <div class="footer__description-box">
-          <p class="footer__confidentiality">Политика конфиденциальности</p>
           <p class="footer__location">г. Новосибирск - 2020</p>
         </div><a href="#header">
           <div class="footer__button-up"><img class="button-up__image" src="img/bottom_arrow.png" alt="">
@@ -232,7 +325,6 @@
           </div></a>
       </div>
     </footer>
-    <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/parallax.min.js"></script>

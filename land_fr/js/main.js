@@ -1,5 +1,19 @@
-// phone number jquery-mask
+// CallOrder jquery-mask on Desktop
+$(document).ready(function() {
+  $("#phoneInputDesktop").mask("+7(999)999-99-99");
+});
 
+// CallOrder jquery-mask on Desktop
+$(document).ready(function() {
+  $("#phoneInputMobile").mask("+7(999)999-99-99");
+});
+
+// CallOrder jquery-mask in Programs section
+$(document).ready(function() {
+  $("#phoneInputPrograms").mask("+7(999)999-99-99");
+});
+
+// phone number jquery-mask of bottom form
 $(document).ready(function() {
   $("#phone").mask("+7(999)999-99-99");
 });
@@ -16,117 +30,117 @@ $(document).ready(function() {
   })
 });
 
-//
-const navOpened = document.querySelector('.header__nav');
-const gamburger = document.querySelector('.hamburger');
-const toggleMenu = document.querySelector('.header__nav_toggle-menu');
+// //
+// const navOpened = document.querySelector('.header__nav');
+// const gamburger = document.querySelector('.hamburger');
+// const toggleMenu = document.querySelector('.header__nav_toggle-menu');
 
-const openNav = () => {
-  setTimeout(() => {
-    navOpened.style.alignItems="start";
-  }, 50);
-  setTimeout(() => {
-    navOpened.style.height="80px";
-  }, 50);
-  setTimeout(() => {
-    navOpened.style.height="90px";
-  }, 100);
-  setTimeout(() => {
-    navOpened.style.height="100px";
-  }, 150);
-  setTimeout(() => {
-    navOpened.style.height="110px";
-  }, 200);
-  setTimeout(() => {
-    navOpened.style.height="120px";
-  }, 250);
-  setTimeout(() => {
-    navOpened.style.height="130px";
-  }, 300);
-  setTimeout(() => {
-    navOpened.style.height="140px";
-  }, 350);
-  setTimeout(() => {
-    navOpened.style.height="150px";
-  }, 400);
-  setTimeout(() => {
-    navOpened.style.height="160px";
-  }, 450);
-  setTimeout(() => {
-    navOpened.style.height="170px";
-  }, 500);
-  setTimeout(() => {
-    navOpened.style.height="180px";
-  }, 550);
-  setTimeout(() => {
-    navOpened.style.height="190px";
-  }, 600); 
-  setTimeout(() => {
-    navOpened.style.height="200px";
-  }, 700);
-  setTimeout(() => {
-    toggleMenu.style.display="block";
-  }, 700);
-};
+// const openNav = () => {
+//   setTimeout(() => {
+//     navOpened.style.alignItems="start";
+//   }, 50);
+//   setTimeout(() => {
+//     navOpened.style.height="80px";
+//   }, 50);
+//   setTimeout(() => {
+//     navOpened.style.height="90px";
+//   }, 100);
+//   setTimeout(() => {
+//     navOpened.style.height="100px";
+//   }, 150);
+//   setTimeout(() => {
+//     navOpened.style.height="110px";
+//   }, 200);
+//   setTimeout(() => {
+//     navOpened.style.height="120px";
+//   }, 250);
+//   setTimeout(() => {
+//     navOpened.style.height="130px";
+//   }, 300);
+//   setTimeout(() => {
+//     navOpened.style.height="140px";
+//   }, 350);
+//   setTimeout(() => {
+//     navOpened.style.height="150px";
+//   }, 400);
+//   setTimeout(() => {
+//     navOpened.style.height="160px";
+//   }, 450);
+//   setTimeout(() => {
+//     navOpened.style.height="170px";
+//   }, 500);
+//   setTimeout(() => {
+//     navOpened.style.height="180px";
+//   }, 550);
+//   setTimeout(() => {
+//     navOpened.style.height="190px";
+//   }, 600); 
+//   setTimeout(() => {
+//     navOpened.style.height="200px";
+//   }, 700);
+//   setTimeout(() => {
+//     toggleMenu.style.display="block";
+//   }, 700);
+// };
 
-const closeNav = () => {
-  setTimeout(() => {
-    toggleMenu.style.display="none";
-  }, 200);
-  setTimeout(() => {
-    navOpened.style.height="190px";
-  }, 50);
-  setTimeout(() => {
-    navOpened.style.height="180px";
-  }, 100);
-  setTimeout(() => {
-    navOpened.style.height="170px";
-  }, 150);
-  setTimeout(() => {
-    navOpened.style.height="160px";
-  }, 200);
-  setTimeout(() => {
-    navOpened.style.height="150px";
-  }, 250);
-  setTimeout(() => {
-    navOpened.style.height="140px";
-  }, 300);
-  setTimeout(() => {
-    navOpened.style.height="130px";
-  }, 350);
-  setTimeout(() => {
-    navOpened.style.height="120px";
-  }, 400);
-  setTimeout(() => {
-    navOpened.style.height="110px";
-  }, 450);
-  setTimeout(() => {
-    navOpened.style.height="100px";
-  }, 500);
-  setTimeout(() => {
-    navOpened.style.height="90px";
-  }, 550);
-  setTimeout(() => {
-    navOpened.style.height="80px";
-  }, 600);
-  setTimeout(() => {
-    navOpened.style.height="70px";
-  }, 700);
-  setTimeout(() => {
-    navOpened.style.alignItems="center";
-  }, 700);
-};
+// const closeNav = () => {
+//   setTimeout(() => {
+//     toggleMenu.style.display="none";
+//   }, 200);
+//   setTimeout(() => {
+//     navOpened.style.height="190px";
+//   }, 50);
+//   setTimeout(() => {
+//     navOpened.style.height="180px";
+//   }, 100);
+//   setTimeout(() => {
+//     navOpened.style.height="170px";
+//   }, 150);
+//   setTimeout(() => {
+//     navOpened.style.height="160px";
+//   }, 200);
+//   setTimeout(() => {
+//     navOpened.style.height="150px";
+//   }, 250);
+//   setTimeout(() => {
+//     navOpened.style.height="140px";
+//   }, 300);
+//   setTimeout(() => {
+//     navOpened.style.height="130px";
+//   }, 350);
+//   setTimeout(() => {
+//     navOpened.style.height="120px";
+//   }, 400);
+//   setTimeout(() => {
+//     navOpened.style.height="110px";
+//   }, 450);
+//   setTimeout(() => {
+//     navOpened.style.height="100px";
+//   }, 500);
+//   setTimeout(() => {
+//     navOpened.style.height="90px";
+//   }, 550);
+//   setTimeout(() => {
+//     navOpened.style.height="80px";
+//   }, 600);
+//   setTimeout(() => {
+//     navOpened.style.height="70px";
+//   }, 700);
+//   setTimeout(() => {
+//     navOpened.style.alignItems="center";
+//   }, 700);
+// };
 
 
 
-gamburger.addEventListener('click', () => {
-  const navHeight = navOpened.getAttribute('style');
-  if (navHeight == 'height: 70px; align-items: center;') {
-    openNav();
-  } else {
-    closeNav();
-  }
-});
+// gamburger.addEventListener('click', () => {
+//   const navHeight = navOpened.getAttribute('style');
+//   if (navHeight == 'height: 70px; align-items: center;') {
+//     openNav();
+//   } else {
+//     closeNav();
+//   }
+// });
 
 // Smooth scroll to anchors
 const anchors = [...document.querySelectorAll('a[href*="#"]')];
