@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Станции водоочистки в модульных контейнерах и зданиях</title>
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <div class="header__row row no-gutters">
+          <div class="header__logo col-xl-2 col-5"><a href="/"><img class="header__logo-image" src="img/logo_1.png" alt=""></a></div>
+          <div class="header__description col-xl-3 col-7">
+            <h4 class="header__description__title">Станции водоочистки в модульных контейнерах и зданиях</h4>
+          </div>
+          <div class="header__button col-xl-5 col-5">
+            <button class="btn btn-primary btn-accent btn-callback" type="button">Перезвонить</button>
+                  <div class="callorder" hidden="true">
+                    <div class="callorder__close"><img class="callorder__close-image" src="img/close.png" alt=""></div>
+                    <div class="callorder__title">Перезвонить нам</div>
+                    <form class="callorder__form" action="">
+                      <input class="callorder__form-input" type="text" name="name" placeholder="Имя" required>
+                      <input class="callorder__form-input" id="callorder" type="tel" name="tel" placeholder="+7(999)999-99-99" required>
+                      <button class="callorder__button" type="submit">Отправить</button>
+                      <p class="callorder__warning">Отправляя данное сообщение вы соглашаетесь с нашей <span class="confidentiality-link">политикой конфиденциальности</span></p>
+                    </form>
+                  </div>
+          </div>
+          <div class="header__contacts col-xl-2 col-7"><a class="header__phone" href="">+7 (3822) 907 110<br></a><a class="header__mail" href="">info@aiver.ru</a></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section class="first-screen container-fluid">
+          <div class="first-screen__content container">
+            <div class="first-screen__row row no-gutters">
+              <div class="col-md-8 col-12 first-screen__title">
+                <h1 class="first-screen__title-name">Поставим<span class="first-screen__title-name title_span">модульную станцию </span>водоочистки в полной заводской
+                  готовности<span class="title_span">на месторождение</span>
+                </h1>
+              </div>
+              <div class="d-none d-md-block col-md-4">
+                <div class="box-calculate">
+                  <div class="box-calculate__header">
+                    <h5 class="box-calculate__title">Получите расчет сметы<br><span>бесплатно</span></h5>
+                  </div>
+                  <div class="box-calculate__body"> 
+                    <p class="box-calculate__description">Вы получите расчет с учетом вашего:</p>
+                    <ul class="box-calculate__list">
+                      <li class="box-calculate__list-item">Анализа воды</li>
+                      <li class="box-calculate__list-item">Воодопотребления</li>
+                      <li class="box-calculate__list-item">Требований к качеству очищенной воды</li>
+                    </ul>
+                    <form class="box-calculate__form" id="getCalculationForm" action="" method="post">
+                      <input class="box-calculate__form-input" type="text" name="name" placeholder="Имя" required>
+                      <input class="box-calculate__form-input" id="clientPhone" type="tel" name="phone" placeholder="+7(999)999-99-99" required>
+                      <button class="box-calculate__form-button" type="submit">Получить смету</button>
+                      <p class="box-calculate__form-notice">Отправляя данное сообщение вы соглашаетесь с нашей <span class="confidentiality-link">политикой конфиденциальности</span></p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="d-md-none col-12">
+                <button class="small-screen-btn mx-auto" type="button" onclick="modalWindow()">Получите расчет сметы бесплатно</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container-fluid mobile-station">
+          <h2 class="mobile-station__title">Станция водоочистки <span class="title_span">в контейнере</span></h2>
+          <div class="container mobile-station__content">
+            <div class="row no-gutters mobile-station__row">
+              <div class="col-md-5 col-12">
+                <div class="mobile-station__advantages">
+                  <div class="advantages__box">
+                    <div class="advantages__description">Поставляем станцию в полной заводской готовности<br> 
+                      <p class="advantages__description-span">перед отправкой проходит опрессовку и все испытания</p>
+                    </div><img class="advantages__icon" src="img/Factory.png" alt="">
+                  </div>
+                  <div class="advantages__box">
+                    <div class="advantages__description">Северное +-50С или арктическое +-60С исполнение</div><img class="advantages__icon" src="img/Temperature.png" alt="">
+                  </div>
+                  <div class="advantages__box">
+                    <div class="advantages__description">Не требуется проведение гос. экспертизы на кап. строение</div><img class="advantages__icon" src="img/Contract.png" alt="">
+                  </div>
+                  <div class="advantages__box">
+                    <div class="advantages__description">Наши станции сертифицированы EAC</div><img class="advantages__icon" src="img/Certificate.png" alt="">
+                  </div>
+                  <div class="advantages__box">
+                    <div class="advantages__description">Возможность перемещение с куста на куст<br>
+                      <p class="advantages__description-span">предусмотрена быстрая консервация и расконсервация, все оборудование надежно закреплено к полу и стенам</p>
+                    </div><img class="advantages__icon" src="img/Truck.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-12 mobile-station__image"><img class="advantages__image" src="img/container.png" alt="">
+                <div class="image-modal__wrap">
+                  <div class="image-modal__inside" id="1">&#43;</div><img class="mobile-station__tooltip-image" src="img/tooltip.png" alt="" data-id="1" hidden="">
+                </div>
+                <div class="image-modal__wrap">
+                  <div class="image-modal__inside" id="2">&#43;</div><img class="mobile-station__tooltip-image" src="img/tooltip.png" alt="" data-id="2" hidden="">
+                </div>
+                <div class="image-modal__wrap">
+                  <div class="image-modal__inside" id="3">&#43;</div><img class="mobile-station__tooltip-image" src="img/tooltip.png" alt="" data-id="3" hidden="">
+                </div>
+                <div class="image-modal__wrap">
+                  <div class="image-modal__inside" id="4">&#43;</div><img class="mobile-station__tooltip-image" src="img/tooltip.png" alt="" data-id="4" hidden="">
+                </div>
+                <div class="image-modal__wrap">
+                  <div class="image-modal__inside" id="5">&#43;</div><img class="mobile-station__tooltip-image" src="img/tooltip.png" alt="" data-id="5" hidden="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="delivery">
+          <div class="delivery__content-wrapper truck">
+            <div class="delivery__box container">
+              <div class="delivery__row row">
+                <div class="delivery__content col-12">
+                  <h2 class="delivery__title">Транспортировка</h2>
+                </div>
+                <div class="delivery__content col-12">
+                  <ul class="delivery__menu">
+                    <li class="delivery__menu-item_selected li-truck" onclick="truck()">Автомобиль</li>
+                    <li class="delivery__menu-item li-helic" onclick="helicopter()">Вертолет</li>
+                    <li class="delivery__menu-item li-chass" onclick="chassis()">Шасси</li>
+                    <li class="delivery__menu-item li-sledge" onclick="sledge()">Сани</li>
+                  </ul>
+                </div>
+                <div class="delivery__content col-xl-5 offset-7 col-12">
+                  <p class="delivery__trigger">Для транспортировки готовой станции мы изготовим контейнер под нужные габариты</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="delivery__content-wrapper helicopter" hidden>
+            <div class="delivery__box container">
+              <div class="delivery__row row">
+                <div class="delivery__content col-12">
+                  <h2 class="delivery__title">Транспортировка</h2>
+                </div>
+                <div class="delivery__content col-12">
+                  <ul class="delivery__menu">
+                    <li class="delivery__menu-item li-truck" onclick="truck()">Автомобиль</li>
+                    <li class="delivery__menu-item_selected li-helic" onclick="helicopter()">Вертолет</li>
+                    <li class="delivery__menu-item li-chass" onclick="chassis()">Шасси</li>
+                    <li class="delivery__menu-item li-sledge" onclick="sledge()">Сани</li>
+                  </ul>
+                </div>
+                <div class="delivery__content col-xl-5 offset-7">
+                  <p class="delivery__trigger">Проработаем вес для вертолета МИ 8</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="delivery__content-wrapper chassis" hidden>
+            <div class="delivery__box container">
+              <div class="delivery__row row">
+                <div class="delivery__content col-12">
+                  <h2 class="delivery__title">Транспортировка</h2>
+                </div>
+                <div class="delivery__content col-12">
+                  <ul class="delivery__menu">
+                    <li class="delivery__menu-item li-truck" onclick="truck()">Автомобиль</li>
+                    <li class="delivery__menu-item li-helic" onclick="helicopter()">Вертолет</li>
+                    <li class="delivery__menu-item_selected li-chass" onclick="chassis()">Шасси</li>
+                    <li class="delivery__menu-item li-sledge" onclick="sledge()">Сани</li>
+                  </ul>
+                </div>
+                <div class="delivery__content col-xl-5 offset-7 col-12">
+                  <p class="delivery__trigger for-chassis">Привезти или перемещать блочно-модульную станцию на шасси, там где есть дороги</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="delivery__content-wrapper sledge" hidden>
+            <div class="delivery__box container">
+              <div class="delivery__row row">
+                <div class="delivery__content col-12">
+                  <h2 class="delivery__title">Транспортировка</h2>
+                </div>
+                <div class="delivery__content col-12">
+                  <ul class="delivery__menu">
+                    <li class="delivery__menu-item li-truck" onclick="truck()">Автомобиль</li>
+                    <li class="delivery__menu-item li-helic" onclick="helicopter()">Вертолет</li>
+                    <li class="delivery__menu-item li-chass" onclick="chassis()">Шасси</li>
+                    <li class="delivery__menu-item_selected li-sledge" onclick="sledge()">Сани</li>
+                  </ul>
+                </div>
+                <div class="delivery__content col-xl-5 offset-7">
+                  <p class="delivery__trigger for-sledge">Привезти или перемещать блочно-модульную станцию на санях, там где нет дорог</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="fast-construction">
+          <div class="fast-construction__content container">
+            <div class="fast-construction__row row">
+              <div class="fast-construction__title col-xl-7 col-12">
+                <h2 class="fast-constraction__title-name">Станция водоочистки в <span class="title_span">быстро возводимом здании</span></h2>
+              </div>
+            </div>
+            <div class="fast-construction__row row">
+              <div class="fast-construction__image-box col-xl-10 col-12">
+                <div class="fast-construction__image-left"></div>
+                <div class="fast-construction__image-right"></div>
+                <div class="fast-construction__arrows" onclick="showFullFotos()">
+                  <div class="fast-construction__arrows-inside">&harr;</div>
+                </div>
+              </div>
+              <p class="fast-construction__comment">Фундаментная плита, с лотками для стока воды, металлический каркас, сип-панели.</p>
+            </div>
+          </div>
+        </section>
+        <section class="warranty">
+          <div class="warranty__inside-container container">
+            <div class="warranty__row row no-gutters">
+              <div class="warranty__content col-12">
+                <h4 class="warranty__title">Гарантируем получение чистой воды и исправную работу оборудования.</h4>
+                <h4 class="warranty__title">Берем на себя <span class="title_span">все этапы водоочистки</span></h4>
+                <div class="warranty__station-index">
+                  <p class="warranty__index-description">Производительность станции от 0,1 м3 до 1 000 м3/час</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="service">
+          <div class="container service__box-content">
+            <div class="row no-gutters service__row">
+              <div class="col-12">
+                <h2 class="service__title">Монтаж и сервис</h2>
+              </div>
+              <div class="col-12 service__description">
+                <div class="description__image-bg">                     </div>
+                <div class="description__box-list">
+                  <div class="description__list-item">
+                    <div class="list-item__icon"><img class="list-item__icon-image" src="img/worker-staff.png" alt=""></div>
+                    <div class="list-item__description"> 
+                      <p class="list-item__description_title">Приедем на место установки</p>
+                      <p class="list-item__description_text"> Произведем первый запуск, обучим персонал заказчика, подключим сетям          </p>
+                    </div>
+                  </div>
+                  <div class="description__list-item">
+                    <div class="list-item__icon"><img class="list-item__icon-image" src="img/documantation.png" alt=""></div>
+                    <div class="list-item__description"> 
+                      <p class="list-item__description_title">Документация</p>
+                      <p class="list-item__description_text">У наших специалистов есть все необходимые допуски для работы на месторождениях и опасных производственных объектах   </p>
+                    </div>
+                  </div>
+                  <div class="description__list-item">
+                    <div class="list-item__icon"><img class="list-item__icon-image" src="img/support.png" alt=""></div>
+                    <div class="list-item__description"> 
+                      <p class="list-item__description_title">Сервисная поддержка</p>
+                      <p class="list-item__description_text">Обеспечим сервисную гарантийную и пост. гарантийную поддержку, поставку расходных материалов и запчастей    </p>
+                    </div>
+                  </div>
+                  <div class="description__list-item">
+                    <div class="list-item__icon"><img class="list-item__icon-image" src="img/water-purification.png" alt=""></div>
+                    <div class="list-item__description"> 
+                      <p class="list-item__description_title">Технология очистки</p>
+                      <p class="list-item__description_text">Технология очистки и компоновка оборудования всегда подбирается индивидуально, что гарантирует получение чистой воды          </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 service__technology">
+                <p class="service__technology__title">Основные применяемые технологии:</p>
+                <div class="service__technology__items">
+                  <ul class="service__technology__list">
+                    <li>осветление</li>
+                    <li>озонирование</li>
+                    <li>коагуляция</li>
+                    <li>обратный осмос</li>
+                    <li>и другие </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 service__technology">
+                <p class="service__technology__title">Станция эффективно очищает воду от:</p>
+                <div class="service__technology__items">
+                  <ul class="service__technology__list">
+                    <li>железа</li>
+                    <li>марганца</li>
+                    <li>органики</li>
+                    <li>солей жесткости</li>
+                    <li>обеззараживает воду </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 service__box-button">
+                <button class="service__button" type="button">Получить консультацию инженера</button>
+                        <div class="consult" hidden="true">
+                          <div class="consult__close"><img class="callorder__close-image" src="img/close.png" alt=""></div>
+                          <div class="callorder__title">Получить консультацию инженера</div>
+                          <form class="callorder__form" action="">
+                            <input class="callorder__form-input" type="text" name="name" placeholder="Имя" required>
+                            <input class="callorder__form-input" id="consult" type="tel" name="tel" placeholder="+7(999)999-99-99" required>
+                            <button class="callorder__button" type="submit">Отправить</button>
+                            <p class="callorder__warning">Отправляя данное сообщение вы соглашаетесь с нашей <span class="confidentiality-link">политикой конфиденциальности</span></p>
+                          </form>
+                        </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="benefit">
+          <div class="benefit__box container">
+            <div class="benefit__row ow no-gutters">
+              <div class="benefit__content col-12">
+                <h4 class="benefit__content__title">Цены на наши услуги являются более <span class="title_span">выгодными в сравнении с московскими </span>компаниями, поскольку мы базируемся в Сибири и имеем опыт работы на болотистой местности так же это <span class="title_span">экономия на транспортных расходах </span></h4>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="clients">
+          <div class="container clients__box">
+            <div class="row no-gutters clients__row">
+              <div class="col-12 clients__content">
+                <h2 class="clients__title">Наши клиенты и партнеры</h2>
+              </div>
+              <div class="col-12 clients__slyder"><img class="clients__slyder-image" src="img/gazprom-logo1.png" alt=""><img class="clients__slyder-image" src="img/ktk-logo1.png" alt=""><img class="clients__slyder-image" src="img/sibur-logo1.png" alt=""><img class="clients__slyder-image" src="img/gsr-logo1.png" alt=""><img class="clients__slyder-image" src="img/gazprom-logo1.png" alt=""><img class="clients__slyder-image" src="img/ktk-logo1.png" alt=""><img class="clients__slyder-image" src="img/sibur-logo1.png" alt=""><img class="clients__slyder-image" src="img/gsr-logo1.png" alt=""></div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__content-wrap">
+            <div class="about__image-box"><img class="about__image" src="img/about.png" alt=""></div>
+            <div class="about__content-box">
+              <h2 class="about__content-title">О компании</h2>
+              <h4 class="about__content-subtitle">Компания «Айвер» предоставляет комплексные услуги в области очистки воды из <span class="title_span">скважин, колодцев, открытых водоемов, </span>осуществляя поставку, монтаж и сервисное обслуживание станций водоочистки.</h4>
+              <p class="about__content-description">
+                Работая в одном направлении — водоподготовка и водоочистка с 2008 года, наша команда накопила большой практический опыт в этой области, который позволяет нам выполнять работы любой сложности 
+                с высоким уровнем качества.
+              </p>
+              <h4 class="about__content-trigger">Чистая вода - наша забота!</h4>
+            </div>
+          </div>
+        </section>
+        <section class="recommend">
+          <div class="recommend__box container">
+            <div class="recommend__row row no-gutters">
+              <div class="recommend__content col-12">
+                <h2 class="recommend__title">Нас рекомендуют</h2>
+              </div>
+              <div class="recommend__slyder col-12"><img class="recommend__slyder-image" src="img/brief1.png" alt=""><img class="recommend__slyder-image" src="img/brief2.png" alt=""><img class="recommend__slyder-image" src="img/brief3.png" alt=""><img class="recommend__slyder-image" src="img/brief4.png" alt=""><img class="recommend__slyder-image" src="img/brief1.png" alt=""><img class="recommend__slyder-image" src="img/brief2.png" alt=""><img class="recommend__slyder-image" src="img/brief3.png" alt=""><img class="recommend__slyder-image" src="img/brief4.png" alt=""></div>
+              <div class="recommend__desc col-12">
+                <h3 class="recommend__desc-title">Установка оборудования водоочистки и водоподготовки</h3>
+                <p class="recommend__desc-text">
+                  Технологии водоподготовки и очистки воды востребованы на предприятиях различного профиля. Они внедряются в пищевой, химической, стекольной 
+                  и нефтеперерабатывающей промышленности, на целлюлозно-бумажном производстве, в сельском хозяйстве и
+                  Технологии водоподготовки и очистки воды востребованы на предприятиях различного профиля. Они внедряются в пищевой, химической, стекольной и нефтеперерабатывающей промышленности, на целлюлозно-бумажном производстве, в сельском хозяйстве и
+                  Технологии водоподготовки и очистки воды востребованы на предприятиях различного профиля. Они внедряются в пищевой, химической, стекольной и нефтеперерабатывающей промышленности, на целлюлозно-бумажном производстве, в сельском хозяйстве и
+                  Технологии водоподготовки и очистки воды востребованы на предприятиях различного профиля. Они внедряются в пищевой, химической, стекольной и нефтеперерабатывающей промышленности, на целлюлозно-бумажном производстве, в сельском хозяйстве и
+                  Технологии водоподготовки и очистки воды востребованы на предприятиях различного профиля. Они внедряются в пищевой, химической, стекольной и нефтеперерабатывающей промышленности, на целлюлозно-бумажном производстве, в сельском хозяйстве и
+                </p>
+                <div class="recommend__open"> 
+                  <div class="recommend__open-text">Развернуть</div><img class="recommend__image" src="img/arrow.png" alt="" onclick="openText()">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="map"></section>
+        <section class="more-websites">
+          <div class="more-websites__box container">
+            <div class="more-websites__row row no-gutters">
+              <div class="more-websites__content col-12">
+                <h2 class="more-websites__title">Другие наши сайты:</h2>
+              </div>
+              <div class="more-websites__content col-12">
+                <div class="more-websites__website">
+                  <p class="website__title voda70">Каталог</p><a class="website__name" href="">voda70.ru</a>
+                </div>
+                <div class="more-websites__website">
+                  <p class="website__title tomsk-aiver">Очистка воды для предприятий в Томске и области</p><a class="website__name" href="">tomsk.aiver.ru</a>
+                </div>
+                <div class="more-websites__website">
+                  <p class="website__title novosib-aiver">Очистка воды для предприятий в Новосибирске и области</p><a class="website__name" href="">novosibirsk.aiver.ru</a>
+                </div>
+                <div class="more-websites__website">
+                  <p class="website__title dom-aiver">Очиска воды в загородных домах</p><a class="website__name" href="">dom.aiver.ru</a>
+                </div>
+                <div class="more-websites__website">
+                  <p class="website__title kemerovo-aiver">Очистка воды для предприятий в Кемерово и области</p><a class="website__name" href="">kemerovo.aiver.ru</a>
+                </div>
+              </div>
+              <div class="more-websites__contacts col-12">
+                <h2 class="more-websites__contacts-title"> Контакты</h2>
+              </div>
+              <div class="more-websites__contacts col-12">
+                <div class="more-websites__website">
+                  <p class="website__title">Звоните</p><a class="website__name" href="">+7 (3822) 907 110</a>
+                </div>
+                <div class="more-websites__website">
+                  <p class="website__title">Пишите</p><a class="website__name" href="">info@aiver.ru</a>
+                </div>
+                <div class="more-websites__website">
+                  <p class="website__title">Приходите</p><a class="website__name" href="">г.Томск, проезд Вершинина 8/2 стр. 1</a>
+                </div>
+                <div class="more-websites__website">
+                  <p class="website__title">Время работы</p><a class="website__name" href="">Пн-Пт 9:00-18:00</a>
+                </div>
+                <div class="more-websites__website">
+                  <p class="website__title_vk">Следите за новостями</p><a href="">
+                    <div class="website__name_vk"></div></a>
+                </div>
+              </div>
+              <div class="more-websites__footer col-12">
+                <div class="more-websites__confidentiality"><img class="more-websites__logo" src="img/logo_2.png" alt=""><a class="more-websites__confidentiality-link" href="policy.html" target="blank">
+                    <p class="more-websites__confidentiality-title">Политика конфиденциальности</p></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
