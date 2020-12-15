@@ -45,8 +45,8 @@ arrowTop.addEventListener('click', () => {
 const scrollToTop = () => {
   if (scrolled > 0) {
     window.scrollTo(0, scrolled);
-    scrolled = scrolled - 60;
-    timer = setTimeout(scrollToTop, 60);
+    scrolled = scrolled - 120;
+    timer = setTimeout(scrollToTop, 120);
   }
   else {
     clearTimeout(timer);
